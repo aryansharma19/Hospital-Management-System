@@ -1,7 +1,7 @@
 package src;
 
 public abstract class HealthInsurancePlan {
-    // Code for 'coverage' field goes here
+
     private double coverage;
 
     public double getCoverage() {
@@ -12,7 +12,9 @@ public abstract class HealthInsurancePlan {
         this.coverage = coverage;
     }
 
-    // Don't worry about the below code and also the InsuranceBrand class
+    public abstract double computeMonthlyPremium(double salary, int age, boolean smoking);
+
+
     private InsuranceBrand offeredBy;
 
     public InsuranceBrand getOfferedBy() {

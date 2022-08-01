@@ -7,7 +7,7 @@ public class Billing {
 
         HealthInsurancePlan patientInsurancePlan = patient.getInsurancePlan();
 
-        // your logic
+
         Double amountPaidByInsuranceCompany = 0.0;
         Double discount = 0.0;
         if(patientInsurancePlan != null) {

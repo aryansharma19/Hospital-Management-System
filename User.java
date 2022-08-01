@@ -8,6 +8,36 @@ public abstract class User {
     private String gender;
     private String email;
 
+    private boolean insured;
+    private int age;
+    private boolean smoking;
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public boolean isSmoking() {
+        return smoking;
+    }
+
+    public void setSmoking(boolean smoking) {
+        this.smoking = smoking;
+    }
+
+    private HealthInsurancePlan insurancePlan;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -40,11 +70,19 @@ public abstract class User {
         this.email = email;
     }
 
-    public long getId() {
-        return id;
-    }
-    public void setId(long id) {
-        this.id = id;
+    public boolean isInsured() {
+        return insured;
     }
 
+    public void setInsured(boolean insured) {
+        this.insured = insured;
+    }
+
+    public HealthInsurancePlan getInsurancePlan() {
+        return insurancePlan;
+    }
+
+    public void setInsurancePlan(HealthInsurancePlan insurancePlan) {
+        this.insurancePlan = insurancePlan;
+    }
 }
